@@ -1,29 +1,27 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Asesoría Financiera - Contacto</title>
+</head>
+<body>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio</title>
-  </head>
-  <body>
-    <h1>MI PORTAFOLIO</h1>
-    <h2>Soy diseñador web</h2>
-    <hr />
+    <form action="contact.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+    
+        <input type="submit" value="Send">
+    </form>
+    
 
-    <a href="./public/movie-ranking.html"
-      ><h2>Proyecto de Peliculas</h2>
-      <img src="./assets/images/peliculas.png" height="240"
-    /></a>
-
-    <a href="./public/birthday-invite.html"
-      ><h2>Proyecto de Invitacion de Cumpleaños</h2>
-      <img src="./assets/images/invitacion.png" height="300"
-    /></a>
-    <hr />
-
-    <a href="./public/contact.html"><h3>Contacto</h3></a>
-    <a href="./public/contact.html"><h3>Sobre mi</h3></a>
-  </body>
+</body>
 </html>
